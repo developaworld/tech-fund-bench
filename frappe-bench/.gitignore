@@ -1,0 +1,63 @@
+# Ignore all log files
+*.log
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore virtual environments
+.venv/
+env/
+envs/
+
+# Ignore Frappe specific folders (for Bench and Docker environments)
+sites/
+config/
+
+# Ignore database and dump files
+*.sql
+*.sqlite3
+*.db
+*.json
+
+# Ignore backup files
+*.bak
+
+# Ignore Docker-specific files (volumes and containers)
+docker-compose.override.yml
+*.pid
+volumes/
+
+# Ignore Frappe generated files
+*.gz
+
+# Ignore environment configuration files (like .env)
+.env
+*.env
+
+# Ignore node_modules (for JavaScript dependencies)
+node_modules/
+
+# Ignore coverage files from testing
+.coverage
+
+# Ignore Python virtual environment folders
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Ignore system-specific files (like macOS, Linux, Windows)
+.DS_Store
+Thumbs.db
+
+# Ignore npm and yarn lock files (for front-end dependencies)
+yarn.lock
+package-lock.json
+
+# Ignore local configuration files for bench and frappe
+sites/*/private/
+sites/*/public/
+sites/*/logs/
